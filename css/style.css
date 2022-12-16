@@ -56,94 +56,8 @@ img:hover {
 
 
 /*------------------------------------*/
-/*              PC / TB               */
+/*                P C                 */
 /*------------------------------------*/
-
-/* TB */
-@media screen and (min-width:451px) and (max-width:1099px) {
-  .sp {
-    display: none;
-  }
-
-  .wrapper {
-    width: 766px;
-    margin: auto;
-  }
-
-  #footer-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 40px;
-    padding: 80px 0;
-  }
-  
-  #header2 {
-    display: flex;
-    flex-direction: row;
-    height: 6em;
-  }
-  
-  .logo {
-    font-size: 32px;
-    letter-spacing: 0.2em;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    padding: 27px 0;
-  }
-  
-  #search-box {
-    position: absolute;
-    right: 85px;
-    bottom: 28px;
-  }
-  
-  #search-box input {
-    width: 80%;
-    border: 1px solid var(--black);
-    font-size: 14px;
-    padding: 0.4em;
-    box-sizing: border-box;
-    border-radius: 0;
-    letter-spacing: 0.1em;
-  }
-  
-  #search-box button{
-    border: none;
-    background: none;
-    padding: 0;
-    margin-left: -18%;
-  }
-  
-  #login {
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    position: absolute;
-    transition: all 0.3s ease;
-    right: 45px;
-    bottom: 32px;
-  }
-  
-  #login:hover{
-    color: var(--ltrGray);
-  }
-  
-  #shopping-cart {
-    font-size: 18px;
-    position: absolute;
-    transition: all 0.3s ease;
-    right: 7px;
-    bottom: 30px;
-  }
-  
-  #shopping-cart:hover{
-    color: var(--ltrGray);
-  }
-}
-
-/* PC */
 @media screen and (min-width:1100px) {
   .sp {
     display: none;
@@ -292,7 +206,7 @@ img:hover {
   opacity: 0.7;
 }
 
-#coupon li img {
+.coupon-size li img {
   width: 750px;
   text-align: center;
 }
@@ -366,10 +280,104 @@ footer p {
   text-align: center;
 }
 
-
-
 #footer-nav li {
   line-height: 32px;
+}
+
+
+/*------------------------------------*/
+/*                T B                 */
+/*------------------------------------*/
+@media screen and (min-width:519px) and (max-width:1099px) {
+  .sp {
+    display: none;
+  }
+
+  .wrapper {
+    width: 750px;
+    margin: auto;
+  }
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    padding: 80px 0;
+  }
+  
+  #header2 {
+    display: flex;
+    flex-direction: row;
+    height: 6em;
+  }
+  
+  .logo {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 27px 0;
+  }
+  
+  #search-box {
+    position: absolute;
+    right: 85px;
+    bottom: 28px;
+  }
+  
+  #search-box input {
+    width: 80%;
+    border: 1px solid var(--black);
+    font-size: 14px;
+    padding: 0.4em;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+  }
+  
+  #search-box button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: -18%;
+  }
+  
+  #login {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 45px;
+    bottom: 32px;
+  }
+  
+  #login:hover{
+    color: var(--ltrGray);
+  }
+  
+  #shopping-cart {
+    font-size: 18px;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 7px;
+    bottom: 30px;
+  }
+  
+  #shopping-cart:hover{
+    color: var(--ltrGray);
+  }
+
+  #main-menu button{
+    width: 95%;
+    height: 95%;
+  }
+
+  .coupon-size li img {
+    width: 80%;
+  }
 }
 
 
@@ -378,7 +386,7 @@ footer p {
 /*------------------------------------*/
 
 /* SP */
-@media screen and (max-width:450px) {
+@media screen and (max-width:520px) {
   .pc{
     display: none;
   }
@@ -412,7 +420,7 @@ footer p {
   }
   
   #sp-search-box form {
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: -45%;
   }
 
@@ -439,7 +447,7 @@ footer p {
     margin-top: 5%;
     transition: all 0.3s ease;
     position: absolute;
-    right: 12.5%;
+    right: 9%;
   }
   
   #sp-login:hover{
@@ -478,7 +486,7 @@ footer p {
     height: 93px;
   }
 
-  #coupon li img {
+  .coupon-size li img {
     width: 100%;
   }
 
