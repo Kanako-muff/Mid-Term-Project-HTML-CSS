@@ -16,6 +16,7 @@ html, body {
   width: 100%;
   height: 100%;
   color: var(--black);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,7 +26,7 @@ a {
 
 ul {
   padding-left: 0;
-  margin: 0 0;
+  margin: 0;
 }
 
 li {
@@ -49,75 +50,184 @@ img:hover {
   margin: 0;
 }
 
-.wrapper {
-  width: 1200px;
-  margin: auto;
-}
-
-#header2 {
-  display: flex;
-  flex-direction: row;
-  height: 6em;
-}
-
 .logo {
-  font-size: 32px;
-  letter-spacing: 0.2em;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  padding: 27px 0;
+  font-weight: 700;
 }
 
-#search-box {
-  position: absolute;
-  right: 8%;
-  bottom: 28px;
+
+/*------------------------------------*/
+/*              PC / TB               */
+/*------------------------------------*/
+
+/* TB */
+@media screen and (min-width:451px) and (max-width:1099px) {
+  .sp {
+    display: none;
+  }
+
+  .wrapper {
+    width: 766px;
+    margin: auto;
+  }
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    padding: 80px 0;
+  }
+  
+  #header2 {
+    display: flex;
+    flex-direction: row;
+    height: 6em;
+  }
+  
+  .logo {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 27px 0;
+  }
+  
+  #search-box {
+    position: absolute;
+    right: 85px;
+    bottom: 28px;
+  }
+  
+  #search-box input {
+    width: 80%;
+    border: 1px solid var(--black);
+    font-size: 14px;
+    padding: 0.4em;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+  }
+  
+  #search-box button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: -18%;
+  }
+  
+  #login {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 45px;
+    bottom: 32px;
+  }
+  
+  #login:hover{
+    color: var(--ltrGray);
+  }
+  
+  #shopping-cart {
+    font-size: 18px;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 7px;
+    bottom: 30px;
+  }
+  
+  #shopping-cart:hover{
+    color: var(--ltrGray);
+  }
 }
 
-#search-box input {
-  width: 80%;
-  border: 1px solid var(--black);
-  font-size: 14px;
-  padding: 0.4em;
-  box-sizing: border-box;
-  border-radius: 0;
-  letter-spacing: 0.1em;
+/* PC */
+@media screen and (min-width:1100px) {
+  .sp {
+    display: none;
+  }
+
+  .wrapper {
+    width: 1100px;
+    margin: auto;
+  }
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    padding: 80px 0;
+  }
+  
+  #header2 {
+    display: flex;
+    flex-direction: row;
+    height: 6em;
+  }
+  
+  .logo {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 27px 0;
+  }
+  
+  #search-box {
+    position: absolute;
+    right: 85px;
+    bottom: 28px;
+  }
+  
+  #search-box input {
+    width: 80%;
+    border: 1px solid var(--black);
+    font-size: 14px;
+    padding: 0.4em;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+  }
+  
+  #search-box button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: -18%;
+  }
+  
+  #login {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 45px;
+    bottom: 32px;
+  }
+  
+  #login:hover{
+    color: var(--ltrGray);
+  }
+  
+  #shopping-cart {
+    font-size: 18px;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 7px;
+    bottom: 30px;
+  }
+  
+  #shopping-cart:hover{
+    color: var(--ltrGray);
+  }
 }
 
-#search-box button{
-  border: none;
-  background: none;
-  padding: 0;
-  margin-left: -18%;
-}
-
-#login {
-  font-size: 18px;
-  letter-spacing: 0.04em;
-  position: absolute;
-  transition: all 0.3s ease;
-  right: 4%;
-  bottom: 32px;
-}
-
-#login:hover{
-  color: var(--ltrGray);
-}
-
-#shopping-cart {
-  font-size: 18px;
-  position: absolute;
-  transition: all 0.3s ease;
-  right: 7px;
-  bottom: 30px;
-}
-
-#shopping-cart:hover{
-  color: var(--ltrGray);
-}
-
-#header3 ul {
+.header3 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -125,32 +235,37 @@ img:hover {
   padding-bottom: 15px;
 }
 
-#header3 li {
+.header3 li {
   margin: auto;
   line-height: 2.5em;
   transition: all 0.3s ease;
 }
 
-#header3 li:hover {
+.header3 li:hover {
   color: var(--ltrGray);
-}
-
-#main-menu button{
-  border-radius: 50%;
-  border:none;
-  width: 200px;
-  height: 200px;
-  color: #FFF;
-  font-size: 18px;
-  font-family: 'Didact Gothic', sans-serif;
-  letter-spacing: 0.2em;
 }
 
 #main-menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 55px 0;
+  padding: 10% 0;
+}
+
+#main-menu li {
+  width: 200px;
+  height: 200px;
+}
+
+#main-menu button{
+  border-radius: 50%;
+  border:none;
+  width: 98%;
+  height: 98%;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Didact Gothic', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 #main-menu .menu1{
@@ -177,6 +292,11 @@ img:hover {
   opacity: 0.7;
 }
 
+#coupon li img {
+  width: 750px;
+  text-align: center;
+}
+
 .section {
   padding-bottom: 80px;
   text-align: center;
@@ -189,7 +309,7 @@ img:hover {
 .section-title {
   text-align: center;
   margin: 0 0;
-  padding: 60px 0;
+  padding: 3em 0;
 }
 
 .section-ul {
@@ -216,7 +336,7 @@ img:hover {
   background: none;
   text-align: center;
   padding: 20px;
-  width: 25%;
+  width: 280px;
   font-family: 'Didact Gothic', sans-serif;
   letter-spacing: 0.2em;
   font-size: 18px;
@@ -246,15 +366,142 @@ footer p {
   text-align: center;
 }
 
-#footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 40px;
-  padding: 80px 0;
-}
+
 
 #footer-nav li {
   line-height: 32px;
+}
+
+
+/*------------------------------------*/
+/*                S P                 */
+/*------------------------------------*/
+
+/* SP */
+@media screen and (max-width:450px) {
+  .pc{
+    display: none;
+  }
+
+  .wrapper {
+    width: 375px;
+    margin: auto;
+  }
+
+  #header1 {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+
+  #sp-header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 4.5%;
+    margin-left: 4%;
+  }
+
+  .sp-header-right {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #sp-search-box form {
+    margin-top: 10%;
+    margin-left: -45%;
+  }
+
+  #sp-search-box input {
+    width: 63%;
+    border: 1px solid var(--black);
+    font-size: 14px;
+    padding: 0.4em;
+    box-sizing: border-box;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+  }
+  
+  #sp-search-box button{
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: -11%;
+  }
+  
+  #sp-login {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    margin-top: 5%;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 12.5%;
+  }
+  
+  #sp-login:hover{
+    color: var(--ltrGray);
+  }
+  
+  #sp-shopping-cart {
+    font-size: 18px;
+    margin-top: 5%;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0%;
+  }
+  
+  #sp-shopping-cart:hover{
+    color: var(--ltrGray);
+  }
+
+  .header3 ul{
+    padding: 3% 0;
+  }
+
+  .header3 li{
+    letter-spacing: 0.2em;
+    font-size: 14px;
+  }
+
+  .section-li {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #main-menu li {
+    width: 93px;
+    height: 93px;
+  }
+
+  #coupon li img {
+    width: 100%;
+  }
+
+  #main-menu button{
+    font-size: 13px;
+    letter-spacing: 0.15em;
+  }
+
+  .btn-more {
+    padding: 14px;
+    width: 250px;
+  }
+
+  .item-panel{
+    width: 98%;
+  }
+
+  footer p, footer a {
+    font-size: 13px;
+  }
+
+  #footer-nav {
+    padding: 80px 0;
+    text-align: center;
+  }
 }

@@ -16,9 +16,43 @@
 <body>
     <header>
         <p id="header1">free shipping on orders over $100</p>
-        <div id="header2" class="wrapper">
+
+        <!--▽▽ SP ▽▽-->
+        <div id="sp-header2" class="sp">
+            <div class="logo">
+                <a href="#">20/20</a>
+            </div>
+            <div class="sp-header-right">
+                <div id="sp-search-box">
+                    <form  method="get" action="#" target="_top" accept-charset="ENG">
+                        <input type="text" maxlength="80" name="s-item" placeholder="denim">
+                        <button type="submit" value="search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div id="sp-login">
+                    <a href="#"><i class="fa-lg fa-solid fa-right-to-bracket"></i></a>
+                </div>
+                <div id="sp-shopping-cart">
+                    <a href="#"><i class="fa-lg fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header3 wrapper sp">
+            <ul>
+                <li><a href="#">TOPS</a></li>
+                <li><a href="#">BOTTOMS</a></li>
+                <li><a href="#">ONEPIECE</a></li>
+                <li><a href="#">OUTER</a></li>
+            </ul>
+        </nav>
+        <!--△△ SP △△-->
+
+        <!--▽▽ PC ▽▽-->
+        <div id="header2" class="wrapper pc">
             <div class="logo"><a href="#">20/20</a>
-                <div id="search-box" class="pc">
+                <div id="search-box">
                     <form method="get" action="#" target="_top" accept-charset="ENG">
                         <input type="text" maxlength="80" name="s-item" placeholder="denim">
                         <button type="submit" value="search">
@@ -34,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <nav id="header3" class="wrapper">
+        <nav class="header3 wrapper pc">
             <ul>
                 <li><a href="#">TOPS</a></li>
                 <li><a href="#">BOTTOMS</a></li>
@@ -42,7 +76,9 @@
                 <li><a href="#">OUTER</a></li>
             </ul>
         </nav>
+        <!--△△ PC △△-->
     </header>
+
     <main>
         <div id="top-images" class="wrapper">
             <ul class="slider">
@@ -126,6 +162,7 @@
             </div>
         </div>
     </main>
+
     <footer>
         <nav id="footer-nav" class="wrapper">
             <h1>20/20</h1>
@@ -141,16 +178,26 @@
             <p>&copy;Copyright 2022. 20/20 All Rights Reserved.</p>
         </div>
     </footer>
-    
-    <!-- slider control -->
+
+
+    <!--▽▽ SLIDER ▽▽-->
     <script>
         $('.slider').slick({
             dots: true,
             autoplay:true,
             infinite: true,
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 451,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
         });
     </script>
+    <!--△△ SLIDER △△-->
 </body>
 </html>
