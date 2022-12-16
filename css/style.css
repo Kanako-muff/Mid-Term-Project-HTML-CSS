@@ -54,6 +54,22 @@ img:hover {
   font-weight: 700;
 }
 
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 3px;
+}
+
+footer li {
+  transition: all 0.3s ease;
+}
+
+footer li:hover {
+  opacity: 0.5;
+}
+
 
 /*------------------------------------*/
 /*                P C                 */
@@ -261,14 +277,6 @@ img:hover {
 .btn-more:hover {
   background: var(--black);
   color: var(--white);
-}
-
-footer {
-  width: 100%;
-  bottom: 0;
-  background-color: var(--black);
-  color: var(--white);
-  padding-bottom: 3px;
 }
 
 footer h1 {
