@@ -428,7 +428,7 @@ footer p {
   }
   
   #sp-search-box form {
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: -10%;
   }
 
@@ -451,7 +451,7 @@ footer p {
     border: none;
     background: none;
     padding: 0;
-    margin-left: -11%;
+    margin-left: -18%;
   }
   
   #sp-login {
@@ -460,7 +460,7 @@ footer p {
     margin-top: 5%;
     transition: all 0.3s ease;
     position: absolute;
-    right: 9%;
+    right: 11%;
   }
   
   #sp-login:hover{
@@ -472,7 +472,7 @@ footer p {
     margin-top: 5%;
     transition: all 0.3s ease;
     position: absolute;
-    right: 0%;
+    right: 2%;
   }
   
   #sp-shopping-cart:hover{
