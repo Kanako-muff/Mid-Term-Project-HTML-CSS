@@ -263,6 +263,7 @@ footer li:hover {
 .btn-more {
   border-radius: 0;
   border: 2px solid var(--black);
+  color: var(--black);
   background: none;
   text-align: center;
   padding: 20px;
@@ -432,11 +433,6 @@ footer p {
     margin-left: -10%;
   }
 
-  /* #sp-search-box form {
-    margin-top: 9%;
-    margin-left: -45%;
-  } */
-
   #sp-search-box input {
     width: 63%;
     border: 1px solid var(--black);
@@ -511,6 +507,7 @@ footer p {
   .btn-more {
     padding: 14px;
     width: 250px;
+
   }
 
   .item-panel{
